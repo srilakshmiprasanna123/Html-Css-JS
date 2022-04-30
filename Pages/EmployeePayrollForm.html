@@ -1,31 +1,49 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll Form</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/EmployeePayrollForm.css">
-    <title>Employee payroll form</title>
 </head>
 
 <body>
+    <!-- UC 1 – Employee Payroll App with Logo -->
     <header class="header-content header">
         <div class="logo-content">
-            <img src="..F:\day 43 new\Assets\logo.png" alt="logo.png">
+            <img src="..F:\day 43 new\Assets\logo.png" alt="logo">
             <div>
                 <span class="emp-text">EMPLOYEE</span><br>
-                <span class="emp-text emp-payroll">PAYROLL</span><br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
             </div>
         </div>
     </header>
+
     <div class="form-content">
-        <form class="form" action="#" onsubmit="save();">
-            <div class="form-head">
-            </div>
+        <form class="form" action="#" onsubmit="save()">
+            <div class="form-head">Employee Payroll Form</div>
             <div class="row-content">
-                <label class="label text" for="name">Name</label>
-                <input class="input" type="text" id="name" name="name" placeholder="Your name" required>
+                <label for="name" class="label text">Name</label>
+                <input type="text" class="input" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="row-content">
+                <label for="profile" class="label text">Profile Image</label>
+                <div class="profile-radio-content">
+                    <label>
+                            <input type="radio" id="profile1" name="profile3" value="../assets/profile-images/Ellipse-1.png" required>
+                            <img class="profile" id="image1" src="../Assets/Ellipse -2.png" alt="">
+                        </label>
+                    <label>
+                            <input type="radio" id="profile2" name="profile3" value="../assets/profile-images/Ellipse-2.png" required>
+                            <img class="profile" id="image2" src="../Assets/Ellipse -1.png" alt="">
+                        </label>
+                    
+                </div>
             </div>
         </form>
     </div>
